@@ -10,7 +10,3 @@ def msg_clientes():
 @mi_app.get("/Lista")
 def de_clientes():
     return ["Y mis clientes son:", "Marco","Antonio","Ximena","Cecilia","Alejandra","Sofia"]
-
-
-
-#https://github.com/Judres-s/Proyecto_clientes.git
