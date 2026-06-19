@@ -30,8 +30,16 @@ lista_clientes = [
     {"id": 5, "nombre": "Sofía", "email": "sofia@gmail.com", "edad": 21, "descripcion": "NA"},
 ]
 
-@app.get("/clientes")
+#endpoint listar todos los clientes
+@mi_app.get("/clientes")
 def listar_clientes():
      return lista_clientes
+
+#endpoint listar un cliente
+@mi_app.get("/clientes/{cliente_id}")
+def listar_cliente(cliente_id: int):
+    for i, obj_client in enumerate(lista_clientes):
+        if obj_client.get("id") == cliente_id:
+            return obj_client
      
 
