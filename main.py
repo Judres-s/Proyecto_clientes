@@ -18,3 +18,6 @@ class Cliente(BaseModel):
     email: str
     descripcion: str
 
+class Factura(BaseModel): id: int 
+cliente_id: int 
+vrtotal: float
